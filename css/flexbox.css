@@ -1,0 +1,42 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/*delete this section once we know what our divs contain. Should go in MAIN.CSS*/
+div {
+    height: 3rem;
+/*    puts space between each div on top&bottom*/
+    margin: 1rem 0;
+}
+
+/*100% width*/
+.flex-grid {
+    display: flex;
+}
+/*each box*/
+.col {
+    background-color: grey;
+}
+
+/*For 1 strip across: likely main nav and footer*/
+.flex-grid .col {
+    flex: 1;
+}
+
+/*For 3 columns*/
+.flex-grid-threes {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-grid-threes .col {
+    width: 33%;
+}
+
+/*For 4 columns*/
+.flex-grid-fours {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-grid-fours .col {
+    width: 25%;
+}
