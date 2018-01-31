@@ -15,44 +15,71 @@
         <h1>companyName</h1>
 <!--        .flex-grid will be for 100% width-->
 <!--        add sections-->
-        <h2>Grid Structure</h2>
-        <h3>CSS Selectors</h3>
-        <ul>
-            <li>.flex-grid</li>
-            <li>.col</li>
-            <li>.flex-grid col</li>
-            <li>.flex-grid-container</li>
-            <li>.flex-grid-threes</li>
-            <li>.flex-grid-threes .col</li>
-            <li>.flex-grid-fours</li>
-            <li>.flex-grid-fours .col</li>
-        </ul>
-        <div class="flex-grid">
-            <div class="col">
-                <p>Main Nav</p>
-            </div>
-        </div>
-<!--        intended use for .flex-grid-container: limit width of the main content-->
-        <div class="flex-grid-container">
-            <div class="flex-grid-threes">
+        <section>
+            <h2>Grid Structure</h2>
+            <h3>Grid CSS Selectors</h3>
+            <ul>
+                <li>.flex-grid</li>
+                <li>.col</li>
+                <li>.flex-grid col</li>
+                <li>.flex-grid-container</li>
+                <li>.flex-grid-threes</li>
+                <li>.flex-grid-threes .col</li>
+                <li>.flex-grid-fours</li>
+                <li>.flex-grid-fours .col</li>
+            </ul>
+            <h3>Grid Sample Code</h3>
+            <code class="sampleCode">
+                &lt;div class="flex-grid"&gt; <br>
+                <blockquote>
+                    &lt;div class="col"&gt;<br>
+                    <blockquote>&lt;p&gt;Main Nav&lt;/p&gt;</blockquote><br>
+                    &lt;/div&gt;
+                </blockquote>
+                &lt;/div&gt;
+                &lt;div class="flex-grid-container"&gt;
+                <blockquote>&lt;div class="flex-grid-threes"&gt;
+                <blockquote>&lt;div class="col"&gt;
+                        <blockquote>&lt;p&gt;Main content, main items&lt;/p&gt;
+                        </blockquote>
+                    &lt;/div&gt;<br>
+                    &lt;div class="col"&gt;<br>
+                    &lt;div class="col"&gt;
+                    </blockquote>
+                    &lt;/div&gt;
+                </blockquote>
+                &lt;/div&gt;<br>
+                &lt;!-- Continue this pattern for other similar columns. Put .flex-grid-twos or .flex-grid-fours in .flex-grid-container div--&gt;
+            </code>
+            <h3>Grid Template Example</h3>
+            <p>Still discussing between 3 and 4 columns. We may use both, but perhaps not on the same page.</p>
+            <div class="flex-grid">
                 <div class="col">
-                    <p>Main content, main items</p>
+                    <p>Main Nav</p>
                 </div>
-                <div class="col"></div>
-                <div class="col"></div>
             </div>
-<!--        Choose between 3 or 4 columns-->
-            <div class="flex-grid-fours">
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
+    <!--        intended use for .flex-grid-container: limit width of the main content-->
+            <div class="flex-grid-container">
+                <div class="flex-grid-threes">
+                    <div class="col">
+                        <p>Main content, main items</p>
+                    </div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+    <!--        Choose between 3 or 4 columns-->
+                <div class="flex-grid-fours">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
             </div>
-        </div>
-        <div class="flex-grid">
-            <div class="col">
-                <p>Footer</p>
+            <div class="flex-grid">
+                <div class="col">
+                    <p>Footer</p>
+                </div>
             </div>
-        </div>
+        </section>
     </body>
 </html>
