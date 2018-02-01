@@ -13,6 +13,8 @@
         <link href="css/main.css" rel="stylesheet">
 <!--        loading the font-->
         <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     
     
@@ -26,14 +28,47 @@
         <section id="main-nav">
             <h2>Main Nav</h2>
             <h3>Main Nav CSS Selectors</h3>
+            <ul>
+                <li>.fa: for the icon next to "categories"</li>
+                <li>.main-nav-bar</li>
+                <li>.main-nav-bar ul</li>
+                <li>.main-nav-bar a</li>
+                <li>.main-nav-bar a:active, .main-nav-bar a:hover, .main-nav-bar a:focus</li>
+                <li>#main-nav-categories:hover > ul.main-nav-dropMenu</li>
+                <li>li &gt; ul.main-nav-dropMenu</li>
+                <li>#main-nav-categories &gt; ul.main-nav-dropMenu li a</li>
+                <li>.main-nav.-dropMenu</li>
+            </ul>
+            
+            
+            
             <h3>Main Nav Sample Code</h3>
-            <h3>Main Nav Example</h3>
+            <code>
+                &lt;header&gt;<br>
+                    &lt;nav class="main-nav-bar"&gt;<br>
+                        &lt;ul&gt;<br>
+                            &lt;li id="main-nav-categories"&gt;<br>
+                                &lt;a href="#main-nav"&gt;<br>
+                                    &lt;div&gt;Categories &lt;i class="fa"&gt;&#xf107;&lt;/i&gt;&lt;/div&gt;<br>
+                                &lt;/a&gt;<br>
+                                &lt;ul class="main-nav-dropMenu"&gt;<br> &lt;li&gt;&lt;a href="#main-nav" class="menu-item"&gt;Bathroom&lt;/a&gt;&lt;/li&gt;<br>
+                                    &lt;!--Repeat for other items in the drop-down menu--&gt;
+                            &lt;/li&gt;<br>
+                        &lt;/ul&gt;<br>
+                    &lt;/nav&gt;<br>
+                &lt;/header&gt;<br><br>
+            </code>
+            
+            
+            
+            <h3>Main Nav Example: Still has some bugs as of Jan 31, 2018</h3>
             <header>
                 <nav class="main-nav-bar">
                     <ul>
-                        <li>
+                        <li id="main-nav-categories">
                             <a href="#main-nav">
-                                <div id="main-nav-categories">Categories</div>
+<!--                                AN IMPORTED ICON: SEE TOP FOR THE ONLINE CSS LINK. "fa" is the class they used in their file, so therefore it is used on main.css. If "fa" is not used as a class, the icon will not appear properly.-->
+                                <div>Categories <i class="fa">&#xf107;</i></div>
                             </a>
                             <ul class="main-nav-dropMenu">
                                 <li><a href="#main-nav" class="menu-item">Bathroom</a></li>
