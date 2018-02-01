@@ -49,7 +49,8 @@
                         &lt;ul&gt;<br>
                             &lt;li id="main-nav-categories"&gt;<br>
                                 &lt;a href="#main-nav"&gt;<br>
-                                    &lt;div&gt;Categories &lt;i class="fa"&gt;&#xf107;&lt;/i&gt;&lt;/div&gt;<br>
+<!--                                    CODE WARNING FOR ICON SYMBOL-->
+                                    &lt;div&gt;Categories &lt;i class="fa"&gt; &#xf107; &lt;/i&gt;&lt;/div&gt;<br>
                                 &lt;/a&gt;<br>
                                 &lt;ul class="main-nav-dropMenu"&gt;<br> &lt;li&gt;&lt;a href="#main-nav" class="menu-item"&gt;Bathroom&lt;/a&gt;&lt;/li&gt;<br>
                                     &lt;!--Repeat for other items in the drop-down menu--&gt;
@@ -79,19 +80,13 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#main-nav">
-                                <div class="main-nav-popular">New and Popular</div>
-                            </a>
+                            <a href="#main-nav"><div class="main-nav-popular">New and Popular</div></a>
                         </li>
                         <li>
-                            <a href="#main-nav">
-                                <div class="main-nav-sales">Sales</div>
-                            </a>
+                            <a href="#main-nav"><div class="main-nav-sales">Sales</div></a>
                         </li>
                         <li>
-                            <a href="#main-nav">
-                                <div class="main-nav-collections">Collections</div>
-                            </a>
+                            <a href="#main-nav"><div class="main-nav-collections">Collections</div></a>
                         </li>
                     </ul>
                 </nav>
@@ -102,15 +97,82 @@
         <section id="product-listing">
             <h2>Product listing</h2>
             <h3>Product listing CSS Selectors</h3>
+            <ul>
+                <li>figcaption</li>
+                <li>.responsive-image</li>
+                <li>.multi-product-item</li>
+                <li>.button-add</li>
+                <li>.button-add:active, .button-add:hover, button-add:focus</li>
+                <li>.title-of-item</li>
+                <li>.brief-description</li>
+            </ul>
+            
+            
+            
             <h3>Product listing Sample Code</h3>
+            <code>
+                 &lt;div class="flex-grid-container"&gt;<br>
+                    &lt;div class="flex-grid-fours"&gt;<br>
+                        &lt;div class="col"&gt;<br>
+                            &lt;figure class="multi-prod-item"&gt;<br>
+                                &lt;img src="img/furniture_0.jpg" alt="A wooden desk set" class="responsive-image"&gt;<br>
+                                &lt;figaption&gt;<br>
+                                    &lt;span class="title-of-item">Kitt Desk&lt;/span&gt;&lt;br&gt;<br>
+                                    &lt;span class="brief-description"&gt;Chair, Table, Storage Unit&lt;/span&gt;&lt;br&gt;<br>
+                                    $229&lt;br&gt;<br>
+                                    &lt;button class="button-add"&gt;BUY&lt;/button&gt;<br>
+                                &lt;/figcapiton&gt;<br>
+                            &lt;/figure&gt;<br>
+                        &lt;/div&gt;<br>
+                    &lt;/div&gt;<br>
+                &lt;/div&gt;<br><br>
+                &lt;!--Repeat this block of code 4 times to fill the four column grid--&gt;
+            </code>
+            
+            
+            
             <h3>Product listing example</h3>
+            <p>Note: How can we make the image expand to the full width of the column?<br>Also, the grey space is only intended to show how much of the column there is.</p>
             <div class="flex-grid-container">
-                <div class="flex-grid-threes">
+                <div class="flex-grid-fours">
                     <div class="col">
                         <figure class="multi-prod-item">
                             <img src="img/furniture_0.jpg" alt="A wooden desk set" class="responsive-image">
                             <figcaption>
-                                <span class="title">Kitt Desk</span><br>
+                                <span class="title-of-item">Kitt Desk</span><br>
+                                <span class="brief-description">Chair, Table, Storage Unit</span><br>
+                                $229<br>
+                                <button class="button-add">BUY</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <figure class="multi-prod-item">
+                            <img src="img/furniture_0.jpg" alt="A wooden desk set" class="responsive-image">
+                            <figcaption>
+                                <span class="title-of-item">Kitt Desk</span><br>
+                                <span class="brief-description">Chair, Table, Storage Unit</span><br>
+                                $229<br>
+                                <button class="button-add">BUY</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <figure class="multi-prod-item">
+                            <img src="img/furniture_0.jpg" alt="A wooden desk set" class="responsive-image">
+                            <figcaption>
+                                <span class="title-of-item">Kitt Desk</span><br>
+                                <span class="brief-description">Chair, Table, Storage Unit</span><br>
+                                $229<br>
+                                <button class="button-add">BUY</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <figure class="multi-prod-item">
+                            <img src="img/furniture_0.jpg" alt="A wooden desk set" class="responsive-image">
+                            <figcaption>
+                                <span class="title-of-item">Kitt Desk</span><br>
                                 <span class="brief-description">Chair, Table, Storage Unit</span><br>
                                 $229<br>
                                 <button class="button-add">BUY</button>
