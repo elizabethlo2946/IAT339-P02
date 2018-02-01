@@ -26,19 +26,22 @@ section code {
     display: flex;
     width: 100%;
     position: relative;
+    justify-content: flex-end;
 }
 
 .main-nav-bar ul {
     list-style: none;
     text-transform: uppercase;
+    display: flex;
 }
 
 .main-nav-bar a {
     text-decoration: none;
+/*    text-align: center;*/
     color: rgb(73,45,9);
     display: block;
     padding: 1rem;
-    transition: all linear 0.2s
+    transition: all linear 0.2s;
 }
 
 .main-nav-bar a:active, .main-nav-bar a:hover, .main-nav-bar a:focus {
@@ -46,11 +49,30 @@ section code {
     color: white;
 }
 
-li:hover > ul.main-nav-dropMenu li {
-    display: flex;
+/*
+li:hover > ul.main-nav-dropMenu li a{
     flex: 1;
+    visibility: visible;
+    display: flex;
+    overflow: scroll;
 }
-li > ul.main-nav-dropMenu li {
+*/
+#main-nav-categories:hover > ul.main-nav-dropMenu li{
+    flex: 1;
+    visibility: visible;
+    display: flex;
+}
+
+li > ul.main-nav-dropMenu {
+    position: absolute;
+}
+
+li > ul.main-nav-dropMenu li a{
     position: relative;
-    display: none;
+    visibility: hidden;
+/*    overflow: hidden;*/
+}
+.main-nav.dropMenu {
+    z-index: 1;
+    display: inline-block;
 }
