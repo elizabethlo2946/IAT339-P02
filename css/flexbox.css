@@ -24,6 +24,14 @@
     padding-left: 10%;
     width: 90%;
 }
+.flex-grid-twos {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-grid-twos .col {
+/*    Under 50% to provide some white space between columns: is this the best way? Or maybe margin should be better*/
+    width: 49.5%;
+}
 
 /*For 3 columns*/
 .flex-grid-threes {
