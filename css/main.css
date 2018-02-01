@@ -3,13 +3,17 @@
 }
 
 body {
-/*    margin: 2.5rem;*/
     font-family: 'Hind Siliguri', sans-serif;
 }
 
-h1, h2, h3 {
+h1, h2, h3, nav {
     font-weight: lighter;
     letter-spacing: 0.04em;
+}
+
+/*Everything but the combined elements, basically...*/
+h1, h2, h3, ul, ol, p, code {
+    margin: 2rem;
 }
 
 section code {
@@ -18,31 +22,60 @@ section code {
     display: block;
 }
 
+/*IMPORTED ICON*/
+.fa {
+    font-size: 
+}
+
 .main-nav-bar {
-/*    puts a line at the bottom of the UL*/
-    border-bottom: 0.05em solid rgba(0,0,0,.1);
-/*    a drop shadow for the menu*/
-    box-shadow: 0 0.5em 0.5em 0 rgba(0,0,0,.1);
     display: flex;
-    width: 100%;
     position: relative;
+    justify-content: center;
+    width: 100%;
+    
+    /*    a drop shadow for the menu*/
+    box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,.1);
 }
 
 .main-nav-bar ul {
     list-style: none;
     text-transform: uppercase;
-    color: rgb(73,45,9);
+    display: flex;
 }
 
 .main-nav-bar a {
     text-decoration: none;
-    color: black;
+    color: rgb(73,45,9);
     display: block;
     padding: 1rem;
-    transition: all linear 0.2s
+    transition: all linear 0.2s;
+    border-radius: 0.2em;
 }
 
 .main-nav-bar a:active, .main-nav-bar a:hover, .main-nav-bar a:focus {
     background-color: rgb(210,180,140);
     color: white;
+}
+
+/*
+li:hover > ul.main-nav-dropMenu li a{
+    flex: 1;
+    visibility: visible;
+    display: flex;
+    overflow: scroll;
+}
+*/
+#main-nav-categories:hover > ul.main-nav-dropMenu li a{
+    flex: 1;
+    visibility: visible;
+    display: flex;
+}
+
+li > ul.main-nav-dropMenu {
+    position: absolute;
+}
+
+#main-nav-categories > ul.main-nav-dropMenu li a{
+    position: relative;
+    visibility: hidden;
 }
