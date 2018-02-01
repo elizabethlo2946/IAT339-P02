@@ -2,13 +2,6 @@
     box-sizing: border-box;
 }
 
-/*delete this section once we know what our divs contain. Should go in MAIN.CSS*/
-div {
-    height: 4rem;
-/*    puts space between each div on top&bottom*/
-/*    margin: 1rem 0;*/
-}
-
 /*100% width*/
 .flex-grid {
     display: flex;
@@ -25,7 +18,6 @@ div {
 }
 
 .flex-grid-container {
-    margin: 2% 0;
     align-items: center;
     justify-content: center;
     height: auto;
@@ -37,8 +29,6 @@ div {
 .flex-grid-threes {
     display: flex;
     justify-content: space-between;
-/*    adding margin to .flex-grid-container*/
-    margin: 4% 0;
 }
 .flex-grid-threes .col {
 /*    Under 33% to provide white space between columns*/
@@ -49,8 +39,6 @@ div {
 .flex-grid-fours {
     display: flex;
     justify-content: space-between;
-    /*    adding margin to .flex-grid-container*/
-    margin: 4% 0;
 }
 .flex-grid-fours .col {
 /*    Under 25% to provide white space between columns*/

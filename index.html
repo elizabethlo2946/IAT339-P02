@@ -1,24 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>companyName</title>
+<!--        TEMPORARY COMPANY NAME-->
+        <title>LoKea</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/flexbox.css" rel="stylesheet">
-        
         <link href="css/main.css" rel="stylesheet">
 <!--        loading the font-->
         <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri" rel="stylesheet"> 
     </head>
+    
+    
+    
     <body>
-        <h1>companyName</h1>
-<!--        .flex-grid will be for 100% width-->
-<!--        add sections-->
+<!--        TEMPORARY COMPANY NAME-->
+        <h1>LoKea</h1>
+
+        
+        
+        <section id="main-nav">
+            <h2>Main Nav</h2>
+            <h3>Main Nav CSS Selectors</h3>
+            <h3>Main Nav Sample Code</h3>
+            <h3>Main Nav Example</h3>
+            <header>
+                <nav class="main-nav-bar">
+                    <ul>
+                        <li>
+                            <a href="#main-nav">
+                                <div>Categories</div>
+                            </a>
+                            <ul class="main-nav-dropMenu">
+                                <li><a href="#main-nav">Bathroom</a></li>
+                                <li><a href="#main-nav">Beds</a></li>
+                                <li><a href="#main-nav">Children's Beds</a></li>
+                                <li><a href="#main-nav">Desks</a></li>
+                                <li><a href="#main-nav">Kitchen</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#main-nav">
+                                <div class="main-nav-popular">New and Popular</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#main-nav">
+                                <div class="main-nav-sales">Sales</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#main-nav">
+                                <div class="main-nav-collections">Collections</div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+        
+        
+        
         <section>
             <h2>Grid Structure</h2>
             <h3>Grid CSS Selectors</h3>
             <ul>
+                <!--        .flex-grid will be for 100% width-->
                 <li>.flex-grid</li>
                 <li>.col</li>
                 <li>.flex-grid col</li>
@@ -28,29 +79,30 @@
                 <li>.flex-grid-fours</li>
                 <li>.flex-grid-fours .col</li>
             </ul>
+            
+            
+            
             <h3>Grid Sample Code</h3>
-            <code class="sampleCode">
+            <code>
                 &lt;div class="flex-grid"&gt; <br>
-                <blockquote>
                     &lt;div class="col"&gt;<br>
-                    <blockquote>&lt;p&gt;Main Nav&lt;/p&gt;</blockquote><br>
-                    &lt;/div&gt;
-                </blockquote>
-                &lt;/div&gt;
-                &lt;div class="flex-grid-container"&gt;
-                <blockquote>&lt;div class="flex-grid-threes"&gt;
-                <blockquote>&lt;div class="col"&gt;
-                        <blockquote>&lt;p&gt;Main content, main items&lt;/p&gt;
-                        </blockquote>
+                        &lt;p&gt;Main Nav&lt;/p&gt;<br>
                     &lt;/div&gt;<br>
-                    &lt;div class="col"&gt;<br>
-                    &lt;div class="col"&gt;
-                    </blockquote>
-                    &lt;/div&gt;
-                </blockquote>
+                &lt;/div&gt;<br><br>
+                
+                &lt;div class="flex-grid-container"&gt;<br>
+                    &lt;div class="flex-grid-threes"&gt;<br>
+                        &lt;div class="col"&gt;<br>
+                            &lt;p&gt;Main content, main items&lt;/p&gt;<br>
+                        &lt;/div&gt;<br>
+                    &lt;div class="col"&gt;&lt;/div&gt;<br>
+                    &lt;div class="col"&gt;&lt;/div&gt;<br>
                 &lt;/div&gt;<br>
                 &lt;!-- Continue this pattern for other similar columns. Put .flex-grid-twos or .flex-grid-fours in .flex-grid-container div--&gt;
             </code>
+            
+            
+            
             <h3>Grid Template Example</h3>
             <p>Still discussing between 3 and 4 columns. We may use both, but perhaps not on the same page.</p>
             <div class="flex-grid">
@@ -69,7 +121,7 @@
                 </div>
     <!--        Choose between 3 or 4 columns-->
                 <div class="flex-grid-fours">
-                    <div class="col"></div>
+                    <div class="col">Main content, main items</div>
                     <div class="col"></div>
                     <div class="col"></div>
                     <div class="col"></div>
