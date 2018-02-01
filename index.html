@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
 <!--        TEMPORARY COMPANY NAME-->
-        <title>LoKea</title>
+        <title>Lok-E</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -11,7 +11,8 @@
         <link href="css/flexbox.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
 <!--        loading the font-->
-        <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri" rel="stylesheet"> 
+<!--        <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri" rel="stylesheet">-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
@@ -20,32 +21,111 @@
     
     <body>
 <!--        TEMPORARY COMPANY NAME-->
-        <h1>LoKea</h1>
+        <div class="flex-grid-container">
+            <h1>Lok-E</h1>
+        </div>
 
         
+        <section id="text-styling">
+            <div class="flex-grid-container">
+                <h2>Text Styling</h2>
+                <div class="flex-grid-twos">
+                    <div class="col">
+                        <h3>Text Styling CSS Selectors</h3>
+                        <ul>
+                            <li>.text-styling</li>
+                            <li>.h1-titles</li>
+                            <li>.h2-headings</li>
+                            <li>.h3-subtitles</li>
+                            <li>p</li>
+                            <li>.ordered-list-steps</li>
+                            <li>.unordered-list-item</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Text Styling Sample Code</h3>
+                        <code>
+                            &lt;ul class="text-styling"&gt;<br>
+                                &lt;li&gt;&lt;h1 class="h1-titles"&gt;Titles&lt;/h1&gt;<br>
+                                &lt;li&gt;&lt;h2 class="h2-headings"&gt;Headings&lt;/h1&gt;<br>
+                                &lt;li&gt;&lt;h3 class="h3-subtitles"&gt;Subtitles&lt;/h1&gt;<br>
+                                &lt;li&gt;&lt;p&gt;Content Here&lt;/p&gt;&lt;/li&gt;<br>
+                            &lt;/ul&gt;<br><br>
+                            &lt;ol&gt;<br>
+                                &lt;li class="ordered-list-steps"&gt;Step 1&lt;/li&gt;<br>
+                                &lt;li class="ordered-list-steps"&gt;Step 2&lt;/li&gt;<br>
+                                &lt;li class="ordered-list-steps"&gt;Step 3&lt;/li&gt;<br>
+                            &lt;/ol&gt;<br><br>
+                            &lt;ul&gt;<br>
+                                &lt;li class="unordered-list-item"&gt;Item 1&lt;/li&gt;<br>
+                                &lt;li class="unordered-list-item"&gt;Item 2&lt;/li&gt;<br>
+                                &lt;li class="unordered-list-item"&gt;Item 3&lt;/li&gt;<br>
+                            &lt;/ul&gt;
+                        </code>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex-grid-container">
+                <div class="flex-grid-twos">
+                    <div class="col">
+                        <h3>Text Styling Example</h3>
+                        <ul class="text-styling">
+                            <li><h1 class="h1-titles">Titles</h1></li>
+                            <li><h2 class="h2-headings">Headings</h2></li>
+                            <li><h3 class="h3-subtitles">Sub titles</h3></li>
+                            <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac sem eu ante semper malesuada vel pulvinar dui. Proin faucibus lorem varius risus fringilla, a placerat tortor interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in nulla et enim porttitor lacinia vitae et ipsum. Mauris nec lobortis nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam vulputate ullamcorper nulla vitae tempor.</p></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h4>Ordered Lists</h4>
+                        <ol>
+                            <li class="ordered-list-steps">Step 1</li>
+                            <li class="ordered-list-steps">Step 2</li>
+                            <li class="ordered-list-steps">Step 3</li>
+                        </ol>
+                        <h4>Unordered Lists: How to have 2 columns? Ex. Item and Price in the same row</h4>
+                        <ul class="unordered-list">
+                            <li class="unordered-list-item">Item 1</li>
+                            <li class="unordered-list-item">Item 2</li>
+                            <li class="unordered-list-item">Item 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
         <section id="color-swatches">
-            <h2>Colour Swatches</h2>
-            <h3>Colour Swatch CSS Selector</h3>
-            <ul>
-                <li>.blue</li>
-                <li>.blue p</li>
-                <li>.red</li>
-                <li>.red p</li>
-                <li>.beige</li>
-                <li>.beige p</li>
-            </ul>
+            <div class="flex-grid-container">
+                <h2>Colour Swatches</h2>
+                <div class="flex-grid-twos">
+                    <div class="col">
+                        <h3>Colour Swatch CSS Selector</h3>
+                        <ul>
+                            <li>.blue</li>
+                            <li>.blue p</li>
+                            <li>.red</li>
+                            <li>.red p</li>
+                            <li>.beige</li>
+                            <li>.beige p</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Colour Swatch Code Sample</h3>
+                        <code>
+                            &lt;div class="flex-grid-container"&gt;<br>
+                                &lt;div class="flex-grid-threes"&gt;<br>
+                                    &lt;div class="col blue"&gt;&lt;p&gt;Blue&lt;/p&gt;&lt;/div&gt;<br>
+                                    &lt;div class="col red"&gt;&lt;p&gt;Red&lt;/p&gt;&lt;/div&gt;<br>
+                                    &lt;div class="col beige"&gt;&lt;p&gt;Beige&lt;/p&gt;&lt;/div&gt;<br>
+                                &lt;/div&gt;<br>
+                            &lt;/div&gt;
+                        </code>
+                    </div>
+                </div>
+            </div>
             
-            
-            <h3>Colour Swatch Code Sample</h3>
-            <code>
-                &lt;div class="flex-grid-container"&gt;<br>
-                    &lt;div class="flex-grid-threes"&gt;<br>
-                        &lt;div class="col blue"&gt;&lt;p&gt;Blue&lt;/p&gt;&lt;/div&gt;<br>
-                        &lt;div class="col red"&gt;&lt;p&gt;Red&lt;/p&gt;&lt;/div&gt;<br>
-                        &lt;div class="col beige"&gt;&lt;p&gt;Beige&lt;/p&gt;&lt;/div&gt;<br>
-                    &lt;/div&gt;<br>
-                &lt;/div&gt;
-            </code>
             
             
             <h3>Colour Swatch Examples</h3>
@@ -62,39 +142,44 @@
         
         
         <section id="main-nav">
-            <h2>Main Nav</h2>
-            <h3>Main Nav CSS Selectors</h3>
-            <ul>
-                <li>.fa: for the icon next to "categories"</li>
-                <li>.main-nav-bar</li>
-                <li>.main-nav-bar ul</li>
-                <li>.main-nav-bar a</li>
-                <li>.main-nav-bar a:active, .main-nav-bar a:hover, .main-nav-bar a:focus</li>
-                <li>#main-nav-categories:hover > ul.main-nav-dropMenu</li>
-                <li>li &gt; ul.main-nav-dropMenu</li>
-                <li>#main-nav-categories &gt; ul.main-nav-dropMenu li a</li>
-                <li>.main-nav.-dropMenu</li>
-            </ul>
-            
-            
-            
-            <h3>Main Nav Sample Code</h3>
-            <code>
-                &lt;header&gt;<br>
-                    &lt;nav class="main-nav-bar"&gt;<br>
-                        &lt;ul&gt;<br>
-                            &lt;li id="main-nav-categories"&gt;<br>
-                                &lt;a href="#main-nav"&gt;<br>
-<!--                                    CODE WARNING FOR ICON SYMBOL-->
-                                    &lt;div&gt;Categories &lt;i class="fa"&gt; &#xf107; &lt;/i&gt;&lt;/div&gt;<br>
-                                &lt;/a&gt;<br>
-                                &lt;ul class="main-nav-dropMenu"&gt;<br> &lt;li&gt;&lt;a href="#main-nav" class="menu-item"&gt;Bathroom&lt;/a&gt;&lt;/li&gt;<br>
-                                    &lt;!--Repeat for other items in the drop-down menu--&gt;
-                            &lt;/li&gt;<br>
-                        &lt;/ul&gt;<br>
-                    &lt;/nav&gt;<br>
-                &lt;/header&gt;<br><br>
-            </code>
+            <div class="flex-grid-container">
+                <h2>Main Nav</h2>
+                <div class="flex-grid-twos">
+                    <div class="col">
+                        <h3>Main Nav CSS Selectors</h3>
+                        <ul>
+                            <li>.fa: for the icon next to "categories"</li>
+                            <li>.main-nav-bar</li>
+                            <li>.main-nav-bar ul</li>
+                            <li>.main-nav-bar a</li>
+                            <li>.main-nav-bar a:active, .main-nav-bar a:hover, .main-nav-bar a:focus</li>
+                            <li>#main-nav-categories:hover > ul.main-nav-dropMenu</li>
+                            <li>li &gt; ul.main-nav-dropMenu</li>
+                            <li>#main-nav-categories &gt; ul.main-nav-dropMenu li a</li>
+                            <li>.main-nav.-dropMenu</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Main Nav Sample Code</h3>
+                        <code>
+                            &lt;header&gt;<br>
+                                &lt;nav class="main-nav-bar"&gt;<br>
+                                    &lt;ul&gt;<br>
+                                        &lt;li id="main-nav-categories"&gt;<br>
+                                            &lt;a href="#main-nav"&gt;<br>
+<!--                                                CODE WARNING FOR ICON SYMBOL-->
+                                                &lt;div&gt;Categories &lt;i class="fa"&gt; &#xf107; &lt;/i&gt;&lt;/div&gt;<br>
+                                            &lt;/a&gt;<br>
+                                            &lt;ul class="main-nav-dropMenu"&gt;<br> &lt;li&gt;&lt;a href="#main-nav" class="menu-item"&gt;Bathroom&lt;/a&gt;&lt;/li&gt;<br>
+                                                &lt;!--Repeat for other items in the drop-down menu--&gt;
+                                        &lt;/li&gt;<br>
+                                    &lt;/ul&gt;<br>
+                                &lt;/nav&gt;<br>
+                            &lt;/header&gt;<br><br>
+                        </code>
+                    </div>
+                </div>
+            </div>
             
             
             
@@ -131,39 +216,45 @@
         
         
         <section id="product-listing">
-            <h2>Product listing</h2>
-            <h3>Product listing CSS Selectors</h3>
-            <ul>
-                <li>figcaption</li>
-                <li>.responsive-image</li>
-                <li>.multi-product-item</li>
-                <li>.button-add</li>
-                <li>.button-add:active, .button-add:hover, button-add:focus</li>
-                <li>.title-of-item</li>
-                <li>.brief-description</li>
-            </ul>
-            
-            
-            
-            <h3>Product listing Sample Code</h3>
-            <code>
-                 &lt;div class="flex-grid-container"&gt;<br>
-                    &lt;div class="flex-grid-fours"&gt;<br>
-                        &lt;div class="col"&gt;<br>
-                            &lt;figure class="multi-prod-item"&gt;<br>
-                                &lt;img src="img/furniture_0.jpg" alt="A wooden desk set" class="responsive-image"&gt;<br>
-                                &lt;figaption&gt;<br>
-                                    &lt;span class="title-of-item">Kitt Desk&lt;/span&gt;&lt;br&gt;<br>
-                                    &lt;span class="brief-description"&gt;Chair, Table, Storage Unit&lt;/span&gt;&lt;br&gt;<br>
-                                    $229&lt;br&gt;<br>
-                                    &lt;button class="button-add"&gt;BUY&lt;/button&gt;<br>
-                                &lt;/figcapiton&gt;<br>
-                            &lt;/figure&gt;<br>
-                        &lt;/div&gt;<br>
-                    &lt;/div&gt;<br>
-                &lt;/div&gt;<br><br>
-                &lt;!--Repeat this block of code 4 times to fill the four column grid--&gt;
-            </code>
+            <div class="flex-grid-container">
+                <h2>Product listing</h2>
+                <div class="flex-grid-twos">
+                    <div class="col">
+                        <h3>Product listing CSS Selectors</h3>
+                        <ul>
+                            <li>figcaption</li>
+                            <li>.responsive-image</li>
+                            <li>.multi-product-item</li>
+                            <li>.button-add</li>
+                            <li>.button-add:active, .button-add:hover, button-add:focus</li>
+                            <li>.title-of-item</li>
+                            <li>.brief-description</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Product listing Sample Code</h3>
+                        <code>
+                             &lt;div class="flex-grid-container"&gt;<br>
+                                &lt;div class="flex-grid-fours"&gt;<br>
+                                    &lt;div class="col"&gt;<br>
+                                        &lt;figure class="multi-prod-item"&gt;<br>
+                                            &lt;img src="img/furniture_0.jpg" alt="A wooden desk set" class="responsive-image"&gt;<br>
+                                            &lt;figaption&gt;<br>
+                                                &lt;span class="title-of-item">Kitt Desk&lt;/span&gt;&lt;br&gt;<br>
+                                                &lt;span class="brief-description"&gt;Chair, Table, Storage Unit&lt;/span&gt;&lt;br&gt;<br>
+                                                $229&lt;br&gt;<br>
+                                                &lt;button class="button-add"&gt;BUY&lt;/button&gt;<br>
+                                            &lt;/figcapiton&gt;<br>
+                                        &lt;/figure&gt;<br>
+                                    &lt;/div&gt;<br>
+                                &lt;/div&gt;<br>
+                            &lt;/div&gt;<br><br>
+                            &lt;!--Repeat this block of code 4 times to fill the four column grid--&gt;
+                        </code>
+                    </div>
+                </div>
+            </div>
+
             
             
             
@@ -222,40 +313,46 @@
         
         
         <section id="grid-structure">
-            <h2>Grid Structure</h2>
-            <h3>Grid CSS Selectors</h3>
-            <ul>
-                <!--        .flex-grid will be for 100% width-->
-                <li>.flex-grid</li>
-                <li>.col</li>
-                <li>.flex-grid col</li>
-                <li>.flex-grid-container</li>
-                <li>.flex-grid-threes</li>
-                <li>.flex-grid-threes .col</li>
-                <li>.flex-grid-fours</li>
-                <li>.flex-grid-fours .col</li>
-            </ul>
-            
-            
-            
-            <h3>Grid Sample Code</h3>
-            <code>
-                &lt;div class="flex-grid"&gt; <br>
-                    &lt;div class="col"&gt;<br>
-                        &lt;p&gt;Main Nav&lt;/p&gt;<br>
-                    &lt;/div&gt;<br>
-                &lt;/div&gt;<br><br>
-                
-                &lt;div class="flex-grid-container"&gt;<br>
-                    &lt;div class="flex-grid-threes"&gt;<br>
-                        &lt;div class="col"&gt;<br>
-                            &lt;p&gt;Main content, main items&lt;/p&gt;<br>
-                        &lt;/div&gt;<br>
-                    &lt;div class="col"&gt;&lt;/div&gt;<br>
-                    &lt;div class="col"&gt;&lt;/div&gt;<br>
-                &lt;/div&gt;<br>
-                &lt;!-- Continue this pattern for other similar columns. Put .flex-grid-twos or .flex-grid-fours in .flex-grid-container div--&gt;
-            </code>
+            <div class="flex-grid-container">
+                <h2>Grid Structure</h2>
+                <div class="flex-grid-twos">
+                    <div class="col">
+                        <h3>Grid CSS Selectors</h3>
+                        <ul>
+                            <!--        .flex-grid will be for 100% width-->
+                            <li>.flex-grid</li>
+                            <li>.col</li>
+                            <li>.flex-grid col</li>
+                            <li>.flex-grid-container</li>
+                            <li>.flex-grid-threes</li>
+                            <li>.flex-grid-threes .col</li>
+                            <li>.flex-grid-fours</li>
+                            <li>.flex-grid-fours .col</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Grid Sample Code</h3>
+                        <code>
+                            &lt;div class="flex-grid"&gt; <br>
+                                &lt;div class="col"&gt;<br>
+                                    &lt;p&gt;Main Nav&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                            &lt;/div&gt;<br><br>
+
+                            &lt;div class="flex-grid-container"&gt;<br>
+                                &lt;div class="flex-grid-threes"&gt;<br>
+                                    &lt;div class="col"&gt;<br>
+                                        &lt;p&gt;Main content, main items&lt;/p&gt;<br>
+                                    &lt;/div&gt;<br>
+                                &lt;div class="col"&gt;&lt;/div&gt;<br>
+                                &lt;div class="col"&gt;&lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;!-- Continue this pattern for other similar columns. Put .flex-grid-twos or .flex-grid-fours in .flex-grid-container div--&gt;
+                        </code>
+                    </div>
+                </div>
+            </div>
+
             
             
             
