@@ -20,7 +20,7 @@ h2, h3, nav {
 
 /*Everything but the combined elements, basically...*/
 h1, h2, h3, ul, ol, p, code {
-    margin: 2rem;
+    margin: 3rem;
 }
 
 h1 {
