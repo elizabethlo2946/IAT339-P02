@@ -19,7 +19,7 @@ h2, h3, nav {
 }
 
 /*Everything but the combined elements, basically...*/
-h1, h2, h3, ul, ol, p, code {
+h1, h2, h3, h4, ul, ol, p, code {
     margin: 3rem;
 }
 
@@ -43,6 +43,66 @@ section code {
 }
 
 
+
+/*TEXT STYLING*/
+
+.text-styling {
+    list-style: none;
+}
+.h1-titles {
+    margin: 0;
+    padding: 0.5rem 0;
+    color: rgb(226, 111, 118);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    border: 0.5rem solid rgb(226, 111, 118);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.h2-headings {
+    margin: 1rem 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+    color: black;
+    font-size: 1.3rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    
+    background-color: rgba(22, 143, 224,0.2);
+    box-shadow: none;
+    border-radius: 0;
+/*    border-bottom: 0.1rem solid rgb(22, 143, 224);*/
+}
+.h3-subtitles {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;   
+}
+.ordered-list-steps {
+    padding: 1.5rem;
+    border-bottom: 0.08rem solid rgba(22, 143, 224,0.5);
+}
+.unordered-list-item {
+    padding:1.2rem;
+    margin: 0.5rem 0;
+    list-style: none;
+    border-left: 0.2rem solid rgba(22, 143, 224,0.5);
+}
+
+
+/*END OF TEXT STYLING*/
+
+
+
+
 /*COLOUR SWATCHES*/
 .blue {
     background-color: rgb(22, 143, 224);
@@ -63,6 +123,9 @@ section code {
     color: white;
 }
 /*END OF COLOUR SWATCHES*/
+
+
+
 
 
 
@@ -132,6 +195,9 @@ li > ul.main-nav-dropMenu {
 
 
 /*END OF MAIN NAV*/
+
+
+
 
 
 
