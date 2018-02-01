@@ -10,17 +10,19 @@ TAN: rgb(210,180,140);
 }
 
 body {
-    font-family: 'Hind Siliguri', sans-serif;
+/*    font-family: 'Hind Siliguri', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
 }
 
 h2, h3, nav {
     font-weight: lighter;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.05em;
 }
 
 /*Everything but the combined elements, basically...*/
 h1, h2, h3, h4, ul, ol, p, code {
     margin: 3rem;
+    font-weight: lighter;
 }
 
 h1 {
