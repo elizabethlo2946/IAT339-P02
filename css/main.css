@@ -43,6 +43,28 @@ section code {
 }
 
 
+/*COLOUR SWATCHES*/
+.blue {
+    background-color: rgb(22, 143, 224);
+}
+.blue p {
+    color: white;
+}
+.red {
+    background-color: rgb(226, 111, 118);
+}
+.red p {
+    color: white;
+}
+.beige {
+    background-color: rgb(210,180,140);
+}
+.beige p {
+    color: white;
+}
+/*END OF COLOUR SWATCHES*/
+
+
 
 /*IMPORTED ICON FOR "CATEGORIES" IN MAIN NAV*/
 .fa {
@@ -139,7 +161,7 @@ figcaption {
     background-color: rgb(142, 114, 78);
     color: white;
 }
-.title {
+.title-of-item {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.08rem;
