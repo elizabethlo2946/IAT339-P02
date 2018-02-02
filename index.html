@@ -5,27 +5,69 @@
         <title>Lok-E</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        
+
+
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/flexbox.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
 <!--        loading the font-->
 <!--        <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri" rel="stylesheet">-->
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    
-    
-    
+
+
+
     <body>
 <!--        TEMPORARY COMPANY NAME-->
         <div class="flex-grid-container">
             <h1>Lok-E</h1>
         </div>
 
-        
+        <section id="interactive-elements">
+            <div class="flex-grid-container">
+                <h2>Interactive Elements</h2>
+                <div class="flex-grid-twos">
+                    <div class="col">
+                        <h3>Interactive Elements CSS Selectors</h3>
+                        <ul>
+                            <li>.button-submit</li>
+                            <li>.button-reset</li>
+                            <li>.input-text</li>
+                            <li>.input-text-box</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Interactive Elements Sample Code</h3>
+                        <code>
+                                &lt;div&gt;&lt;a class="button-submit" href="#"&gt;Titles&lt;/a&gt;&lt;/div&gt;<br>
+                                &lt;div&gt;&lt;a class="button-reset" href="#"&gt;Headings&lt;/h1&gt;&lt;/div&gt;<br>
+                                &lt;div&gt;&lt;form class="input-text"&gt;<br>
+                                &lt;input&gt;Content Here&lt;/input&gt;<br>&lt;form&gt;&lt;div&gt;<br>
+                        </code>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="flex-grid-container">
+              <h3>Interactive Element Examples</h3>
+                <div class="flex-grid-threes">
+                    <div class="col"><a class="button-submit" href="#">Submit</a></div>
+                    <div class="col"><a class="button-reset" href="#">Reset settings</a></div>
+                    <div class="col">
+                      <form class="input-text">
+                        Name:
+                        <input type="text" class="input-text-box" placeholder="Enter your name">
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="text-styling">
             <div class="flex-grid-container">
                 <h2>Text Styling</h2>
@@ -37,7 +79,8 @@
                             <li>.h1-titles</li>
                             <li>.h2-headings</li>
                             <li>.h3-subtitles</li>
-                            <li>p</li>
+                            <li>.a-in-text</li>
+                            <li>.p-paragraph</li>
                             <li>.ordered-list-steps</li>
                             <li>.unordered-list-item</li>
                         </ul>
@@ -49,7 +92,8 @@
                                 &lt;li&gt;&lt;h1 class="h1-titles"&gt;Titles&lt;/h1&gt;<br>
                                 &lt;li&gt;&lt;h2 class="h2-headings"&gt;Headings&lt;/h1&gt;<br>
                                 &lt;li&gt;&lt;h3 class="h3-subtitles"&gt;Subtitles&lt;/h1&gt;<br>
-                                &lt;li&gt;&lt;p&gt;Content Here&lt;/p&gt;&lt;/li&gt;<br>
+                                &lt;li&gt;&lt;a class="a-in-text"&gt;In-text link&lt;/a&gt;&lt;/li&gt;<br>
+                                &lt;li&gt;&lt;p class="p-paragraph"&gt;Content&lt;/p&gt;&lt;/li&gt;<br>
                             &lt;/ul&gt;<br><br>
                             &lt;ol&gt;<br>
                                 &lt;li class="ordered-list-steps"&gt;Step 1&lt;/li&gt;<br>
@@ -65,16 +109,17 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="flex-grid-container">
                 <div class="flex-grid-twos">
                     <div class="col">
                         <h3>Text Styling Example</h3>
                         <ul class="text-styling">
-                            <li><h1 class="h1-titles">Titles</h1></li>
-                            <li><h2 class="h2-headings">Headings</h2></li>
-                            <li><h3 class="h3-subtitles">Sub titles</h3></li>
-                            <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac sem eu ante semper malesuada vel pulvinar dui. Proin faucibus lorem varius risus fringilla, a placerat tortor interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in nulla et enim porttitor lacinia vitae et ipsum. Mauris nec lobortis nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam vulputate ullamcorper nulla vitae tempor.</p></li>
+                            <li class="unordered-list-text-example"><h1 class="h1-titles">Titles</h1></li>
+                            <li class="unordered-list-text-example"><h2 class="h2-headings">Headings</h2></li>
+                            <li class="unordered-list-text-example"><h3 class="h3-subtitles">Sub titles</h3></li>
+                            <li class="unordered-list-text-example"><a href="#" class="a-in-text">In-text link</a></li>
+                            <li class="unordered-list-text-example"><p class="p-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac sem eu ante semper malesuada vel pulvinar dui. Proin faucibus lorem varius risus fringilla, a placerat tortor interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in nulla et enim porttitor lacinia vitae et ipsum. Mauris nec lobortis nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam vulputate ullamcorper nulla vitae tempor.</p></li>
                         </ul>
                     </div>
                     <div class="col">
@@ -94,8 +139,8 @@
                 </div>
             </div>
         </section>
-        
-        
+
+
         <section id="color-swatches">
             <div class="flex-grid-container">
                 <h2>Colour Swatches</h2>
@@ -125,9 +170,9 @@
                     </div>
                 </div>
             </div>
-            
-            
-            
+
+
+
             <h3>Colour Swatch Examples</h3>
             <p>Official colours are still being discussed</p>
             <div class="flex-grid-container">
@@ -138,9 +183,9 @@
                 </div>
             </div>
         </section>
-        
-        
-        
+
+
+
         <section id="main-nav">
             <div class="flex-grid-container">
                 <h2>Main Nav</h2>
@@ -180,9 +225,9 @@
                     </div>
                 </div>
             </div>
-            
-            
-            
+
+
+
             <h3>Main Nav Example: Still has some bugs as of Jan 31, 2018</h3>
             <header>
                 <nav class="main-nav-bar">
@@ -213,8 +258,8 @@
                 </nav>
             </header>
         </section>
-        
-        
+
+
         <section id="product-listing">
             <div class="flex-grid-container">
                 <h2>Product listing</h2>
@@ -255,9 +300,9 @@
                 </div>
             </div>
 
-            
-            
-            
+
+
+
             <h3>Product listing example</h3>
             <p>Note: How can we make the image expand to the full width of the column?<br>Also, the grey space is only intended to show how much of the column there is.</p>
             <div class="flex-grid-container">
@@ -309,9 +354,9 @@
                 </div>
             </div>
         </section>
-        
-        
-        
+
+
+
         <section id="grid-structure">
             <div class="flex-grid-container">
                 <h2>Grid Structure</h2>
@@ -353,9 +398,9 @@
                 </div>
             </div>
 
-            
-            
-            
+
+
+
             <h3>Grid Template Example</h3>
             <p>Still discussing between 3 and 4 columns. We may use both, but perhaps not on the same page.</p>
             <div class="flex-grid">
