@@ -19,6 +19,74 @@ h2, h3, nav {
     letter-spacing: 0.05em;
 }
 
+/* Interactive elements */
+
+.button-submit {
+  margin: 0;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+
+  color: white;
+  font-size: 1.3rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+
+  background-color: rgba(22, 143, 224, 0.6);
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  box-shadow: 0 0.5em 0.5em 0 rgba(0,0,0,.3);
+  box-shadow: none;
+  border-radius: 0.25em;
+}
+.button-submit:active, .button-submit:hover, .button-submit:focus{
+  background-color: rgba(22, 143, 224, 1);
+}
+
+.button-reset {
+  margin: 0;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+
+  color: rgb(96,83,67);
+  font-size: 1.3rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+
+  background-color: rgba(210,180,140,1);
+  -webkit-transition: background-color, color 0.3s ease-out;
+  transition: background-color, color 0.3s ease-out;
+  box-shadow: 0 0.5em 0.5em 0 rgba(0,0,0,.3);
+  box-shadow: none;
+  border-radius: 0.25em;
+}
+.button-reset:active, .button-reset:hover, .button-reset:focus{
+  color: rgba(210,180,140,1);
+  background-color: rgba(119,103,83,1);
+}
+.input-text {
+  margin: 0;
+  padding: 0.5rem;
+  background-color: rgb(210,180,140);
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-radius: 0.25em;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+.input-text-box {
+  width: 80%;
+}
+
+.unordered-list-interac-example {
+  padding-bottom: 1rem;
+}
+
 /*Everything but the combined elements, basically...*/
 h1, h2, h3, h4, ul, ol, p, code {
     margin: 3rem;
@@ -66,17 +134,17 @@ section code {
 }
 
 .h2-headings {
-    margin: 1rem 0;
+    margin: 0;
     padding: 0.5rem;
     display: flex;
     justify-content: center;
-    
+
     color: black;
     font-size: 1.3rem;
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    
+
     background-color: rgba(22, 143, 224,0.2);
     box-shadow: 0 0.5em 0.5em 0 rgba(0,0,0,.3);
     box-shadow: none;
@@ -89,7 +157,28 @@ section code {
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: bolder;
-    letter-spacing: 0.2rem;   
+    letter-spacing: 0.2rem;
+}
+.a-in-text {
+    margin: 0;
+    padding:0;
+    font-size: 1rem;
+    text-decoration: underline;
+    color: rgb(22, 143, 224);
+    transition: all linear 0.2s;
+    font-weight: bold;
+}
+.a-in-text:active, .a-in-text:hover, .a-in-text:focus{
+  color: black;
+}
+.p-paragraph {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  /* font-weight: bolder; */
+}
+.unordered-list-text-example {
+  padding-bottom: 1rem;
 }
 .ordered-list-steps {
     padding: 1.5rem;
@@ -136,7 +225,7 @@ section code {
 
 /*IMPORTED ICON FOR "CATEGORIES" IN MAIN NAV*/
 .fa {
-    font-size: 
+    font-size:
 }
 
 
@@ -148,7 +237,7 @@ section code {
     position: relative;
     justify-content: center;
     width: 100%;
-    
+
     /*    a drop shadow for the menu*/
     box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,.1);
 /*    a magic number to see the menu at its greatest...*/
